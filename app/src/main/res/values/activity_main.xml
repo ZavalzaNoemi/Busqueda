@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Campo de texto para ingresar la pregunta -->
+    <EditText
+        android:id="@+id/editTextPregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="¿Qué quieres preguntar?"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp" />
+
+    <!-- Botón de búsqueda -->
+    <Button
+        android:id="@+id/buttonBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:textSize="16sp"
+        android:layout_below="@id/editTextPregunta"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Espacio para mostrar la respuesta -->
+    <TextView
+        android:id="@+id/textViewRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La respuesta aparecerá aquí."
+        android:textSize="16sp"
+        android:layout_below="@id/buttonBuscar"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+</RelativeLayout>
